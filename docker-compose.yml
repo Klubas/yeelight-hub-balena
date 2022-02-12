@@ -1,0 +1,41 @@
+version: "2"
+
+services:
+  client:
+    build: 
+      context: ./yeelight-controller-client/
+      # dockerfile: Dockerfile.template
+      dockerfile: Dockerfile.raspberry-pi
+    restart: always
+    network_mode: "host"
+    
+  api:
+    build: 
+      context: ./yeelight-controller-api/
+      dockerfile: Dockerfile.template
+    restart: always
+    network_mode: "host"
+  
+  #fbcp:
+  #  image: balenablocks/fbcp
+  #  privileged: true
+  #  restart: unless-stopped
+
+  #browser:
+  #  build:
+  #   context: ./browser/
+  #   dockerfile: Dockerfile 
+  #  privileged: true
+  #  network_mode: "host"
+  #  restart: unless-stopped
+  #  environment:
+  #    KIOSK: 1
+  #    WINDOW_SIZE: 480,320
+  #    LOCAL_HTTP_DELAY: 120
+  #    ENABLE_GPU: 1
+  #  volumes:
+  #    - 'settings:/data'
+
+#volumes:
+#  settings:
+    

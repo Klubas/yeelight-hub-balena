@@ -1,0 +1,7 @@
+#./yeelight-controller-api
+#./yeelight-controller-client
+*.vscode/
+*.idea/
+*/venv/
+*./electron
+*.code-workspace

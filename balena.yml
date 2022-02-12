@@ -1,0 +1,23 @@
+
+name: yeelight-hub
+type: sw.application
+description: >-
+  Control your yeelight lamps
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/klubas/yeelight-controller'
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberrypi3
+  applicationEnvironmentVariables:
+    - YC_USERNAME: admin
+    - YC_PWD: admin
+    - YC_LOCAL_TOKEN: local_network
+    - YC_SYNC_TIMEOUT: 1
+    - REACT_APP_DEFAULT_COLOR_MODE: dark
+  applicationConfigVariables:
+    - RESIN_HOST_CONFIG_dtparam: 'i2c_arm=off,spi=off,audio=off'
+version: 0.0.1
