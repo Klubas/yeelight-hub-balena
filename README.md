@@ -2,7 +2,7 @@
 
 Wrapper for yeelight-controller api and client with a docker-compose file
 
-[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/klubas/yeelight-controller&defaultDeviceType=raspberrypi3)
+[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/klubas/yeelight-hub-balena&defaultDeviceType=raspberrypi3)
 
 API and client repos:
 * https://github.com/Klubas/yeelight-controller-api
