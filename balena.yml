@@ -7,7 +7,7 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/klubas/yeelight-controller'
+      url: 'https://github.com/klubas/yeelight-hub-balena'
 data:
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
