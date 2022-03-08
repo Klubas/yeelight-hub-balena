@@ -15,27 +15,3 @@ services:
       dockerfile: Dockerfile.template
     restart: always
     network_mode: "host"
-  
-  #fbcp:
-  #  image: balenablocks/fbcp
-  #  privileged: true
-  #  restart: unless-stopped
-
-  #browser:
-  #  build:
-  #   context: ./browser/
-  #   dockerfile: Dockerfile 
-  #  privileged: true
-  #  network_mode: "host"
-  #  restart: unless-stopped
-  #  environment:
-  #    KIOSK: 1
-  #    WINDOW_SIZE: 480,320
-  #    LOCAL_HTTP_DELAY: 120
-  #    ENABLE_GPU: 1
-  #  volumes:
-  #    - 'settings:/data'
-
-#volumes:
-#  settings:
-    
