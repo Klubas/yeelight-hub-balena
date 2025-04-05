@@ -14,7 +14,7 @@ class BulbCache:
         Discover bulbs in local network and returns in a list
         """
         try:
-            discovered_bulbs = discover_bulbs(timeout=int(os.getenv('YC_SYNC_TIMEOUT')))
+            discovered_bulbs = discover_bulbs(timeout=int(os.getenv('YC_SYNC_TIMEOUT', 30)))
         except Exception as e:
             raise Exception(str(e))
 
