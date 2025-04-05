@@ -1,18 +1,22 @@
 services:
   client:
+    container_name: yeelight-client
     build:
       context: ./yeelight-controller-client/
       dockerfile: Dockerfile
     environment:
       TZ: America/Sao_Paulo
     restart: always
+    # deve sempre ser host
     network_mode: "host"
 
   api:
+    container_name: yeelight-api
     build:
       context: ./yeelight-controller-api/
       dockerfile: Dockerfile
     environment:
       TZ: America/Sao_Paulo
     restart: always
+    # deve sempre ser host
     network_mode: "host"
