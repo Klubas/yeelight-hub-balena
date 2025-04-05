@@ -1,17 +1,18 @@
-version: "2"
-
 services:
   client:
-    build: 
+    build:
       context: ./yeelight-controller-client/
-      # dockerfile: Dockerfile.template
-      dockerfile: Dockerfile.raspberry-pi
+      dockerfile: Dockerfile
+    environment:
+      TZ: America/Sao_Paulo
     restart: always
     network_mode: "host"
-    
+
   api:
-    build: 
+    build:
       context: ./yeelight-controller-api/
-      dockerfile: Dockerfile.template
+      dockerfile: Dockerfile
+    environment:
+      TZ: America/Sao_Paulo
     restart: always
     network_mode: "host"
